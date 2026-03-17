@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern To-Do Frontend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="background.mp4" type="video/mp4">
+  </video>
+
+  <div class="todo-container">
+    <h1>My Modern To-Do</h1>
+
+    <!-- Form to add task -->
+    <form class="todo-form">
+      <input type="text" placeholder="Task title" class="todo-title" required>
+      <input type="text" placeholder="Task description" class="todo-desc">
+      
+      <select class="todo-category">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Urgent">Urgent</option>
+      </select>
+
+      <button type="submit" class="todo-button">Add Task</button>
+    </form>
+
+    <!-- Task list -->
+    <ul class="todo-list"></ul>
+
+    <!-- Dark mode toggle -->
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
